@@ -15,6 +15,7 @@
                 echo $errorLogin;
             }
         ?>
+        <img src="Group 1.png">
         <h2>Iniciar sesión</h2>
         <p>Nombre de usuario: <br>
         <input type="text" name="username"></p>

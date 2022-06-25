@@ -1,13 +1,23 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: rgb(34,40,49);
+  background: linear-gradient(277deg, rgba(34,40,49,1) 0%, rgba(57,62,70,1) 35%, rgba(0,173,181,1) 100%);
 }
 form{
-    background-color: #eee;
+    background: rgb(34,40,49);
+  background: linear-gradient(277deg, rgba(34,40,49,1) 0%, rgba(57,62,70,1) 35%, rgba(0,173,181,1) 100%);
     margin: 0 auto;
     width: 400px;
     padding: 20px;
+    color: #eee;
+
 }
 
+img{
+    position: flex;
+    width: 100%;
+    height: 50%;
+}
 input{
     border: solid 0;
     border-radius: 3px;
@@ -57,8 +67,10 @@ input[type=submit]{
     list-style: none;
     display: inline-block;
     width: 100%;
+    
 }
 #menu ul li{
+    
     display: inline;
 }
 #menu ul li a{
