@@ -33,7 +33,8 @@ input[type=submit]{
 }
 
 .barra{
-    background-color:rgb(152, 196, 236);
+  background: rgb(34,40,49);
+  background: linear-gradient(277deg, rgba(34,40,49,1) 0%, rgba(57,62,70,1) 35%, rgba(0,173,181,1) 100%);
     border-radius: 4px;
     padding: 10px;
 }
@@ -46,7 +47,8 @@ input[type=submit]{
 }
 
 #menus{
-    background-color: #eee;
+  background: rgb(34,40,49);
+  background: linear-gradient(277deg, rgba(34,40,49,1) 0%, rgba(57,62,70,1) 35%, rgba(0,173,181,1) 100%);
     padding: 10px;
     
 }
@@ -56,6 +58,7 @@ input[type=submit]{
     list-style: none;
     display: inline-block;
     width: 100%;
+    color: #eee;
     
 }
 #menus ul li{
@@ -75,6 +78,10 @@ input[type=submit]{
     float: right;
 }
 
+#bien{
+  text-align: center;
+  color: #eee;
+}
 ----------------
 body {
     font-family: "Gilroy ExtraBold", system-ui, sans-serif;
@@ -83,16 +90,19 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-font-kerning: normal;
     -webkit-text-size-adjust: 100%;
+    overflow: scroll;
   }
   
   html,
  body {
     width: 100vw;
     height: 100vh;
+    overflow: scroll;
   }
   
   body {
-    background: linear-gradient(45deg, #02001F, #1F1B4E);
+    background: rgb(34,40,49);
+    background: linear-gradient(328deg, rgba(34,40,49,1) 0%, rgba(57,62,70,1) 35%, rgba(0,173,181,1) 100%);
     transform-style: preserve-3d;
     transform: perspective(60rem);
     position: fixed;
@@ -165,4 +175,51 @@ body {
   .Menu-list-item:hover::before,
   .Menu-list-item:active::before {
     transform: scale(1);
+  }
+
+  .Division{
+    width: auto;
+    
+  }
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: relative;
+    top: 18%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+  }
+  p span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(textfill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+  
+  /* Animate Background Image */
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
   }
