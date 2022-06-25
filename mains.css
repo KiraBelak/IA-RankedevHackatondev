@@ -1,10 +1,4 @@
 
-form{
-    background-color: #eee;
-    margin: 0 auto;
-    width: 400px;
-    padding: 20px;
-}
 
 input{
     border: solid 0;
@@ -52,6 +46,14 @@ input[type=submit]{
     padding: 10px;
     
 }
+#menus img{
+  display: inline-block;
+  position: fixed; left: 48%;top: 0%;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
 #menus ul{
     margin: 0;
     padding: 0;
@@ -223,3 +225,29 @@ body {
       background-position: 100% 50%;
     }
   }
+
+  footer{
+    position: flex; 
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+}
+
+
+footer img{
+    width: 10%;
+    position: flex; 
+   
+}
+
+#logof{
+    width: 8%;
+}
+
+#micro{
+    margin-top: 5%;
+    width: 15%;
+}
+a{
+  text-decoration: none;
+}

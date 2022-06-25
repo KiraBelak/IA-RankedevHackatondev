@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <form action="" method="POST">
+    <form action="" method="POST" ">
+    <div id="errorl">
         <?php
             if(isset($errorLogin)){
                 echo $errorLogin;
             }
         ?>
-        <img src="Group 1.png">
+        </div>
+        <img src="Group 1.png" id="logo">
         <h2>Iniciar sesión</h2>
         <p>Nombre de usuario: <br>
         <input type="text" name="username"></p>
@@ -23,5 +25,13 @@
         <input type="password" name="password"></p>
         <p class="center"><input type="submit" value="Iniciar Sesión"></p>
     </form>
+    <footer>
+   
+  <img src="ailab.png" alt="">
+  <img src="Group 1.png" alt="" id="logof">
+  <img src="hackly.png" alt="">
+  <img src="micro.png" alt="" id="micro">
+</footer>
 </body>
+
 </html>

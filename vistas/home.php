@@ -12,6 +12,7 @@
     <div id="menus">
         <ul>
             <li>Home</li>
+            <img src="Group 1.png" alt="">
             <li class="cerrar-sesion"><a href="includes/logout.php">Cerrar sesión</a></li>
         </ul>
     </div>
@@ -32,11 +33,13 @@
 </p>
 </div>
   <ul class="Menu-list" data-offset="10">
+    <a href="https://forum.opencart.com/viewtopic.php?t=81577">
     <li class="Menu-list-item" data-offset="20" onclick>
       NodeJs
       <span class="Mask"><span>NodeJs</span></span>
       <span class="Mask"><span>NodeJs</span></span>
     </li>
+    </a>
     <li class="Menu-list-item" data-offset="16" onclick>
       Javascript
       <span class="Mask"><span>Javascript</span></span>
@@ -94,5 +97,12 @@
 </div>    
 </scroll>
 </body>
+<footer>
+   
+  <img src="ailab.png" alt="">
+  <img src="Group 1.png" alt="" id="logof">
+  <img src="hackly.png" alt="">
+  <img src="micro.png" alt="" id="micro">
+</footer>
 
 </html>
