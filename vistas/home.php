@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,9 @@
 <body>
     <div id="menus">
         <ul>
+          
             <li>Home</li>
+            
             <img src="Group 1.png" alt="">
             <li class="cerrar-sesion"><a href="includes/logout.php">Cerrar sesión</a></li>
         </ul>
@@ -33,7 +36,8 @@
 </p>
 </div>
   <ul class="Menu-list" data-offset="10">
-    <a href="https://forum.opencart.com/viewtopic.php?t=81577">
+    <a href=$siu >
+      
     <li class="Menu-list-item" data-offset="20" onclick>
       NodeJs
       <span class="Mask"><span>NodeJs</span></span>
@@ -104,5 +108,8 @@
   <img src="hackly.png" alt="">
   <img src="micro.png" alt="" id="micro">
 </footer>
+<?php 
+
+?>
 
 </html>
