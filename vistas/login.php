@@ -1,4 +1,10 @@
 
+<?php
+
+ob_start();
+$_SESSION['n1m']=0;
+echo $_SESSION['n1m'];
+ ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +15,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <form action="" method="POST" ">
+    <form action="" method="POST" >
     <div id="errorl">
         <?php
             if(isset($errorLogin)){
@@ -24,6 +30,8 @@
         <p>Password: <br>
         <input type="password" name="password"></p>
         <p class="center"><input type="submit" value="Iniciar Sesión"></p>
+        <?php
+         ?>
     </form>
     <footer>
    

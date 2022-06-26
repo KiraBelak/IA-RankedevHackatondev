@@ -1,7 +1,7 @@
 <?php
 include_once 'includes/user.php';
 include_once 'includes/user_session.php';
-
+include_once 'menu.php';
 
 $userSession = new UserSession();
 $user = new User();
@@ -9,8 +9,13 @@ $user = new User();
 if(isset($_SESSION['user'])){
     //echo "hay sesion";
     $user->setUser($userSession->getCurrentUser());
+    ob_start();
+    $rec= $_SESSION['n1m'];
+    if($rec==1){
+        include_once 'vistas/Nodejs.php';
+    }else{
     include_once 'vistas/home.php';
-    
+    }
 
 }else if(isset($_POST['username']) && isset($_POST['password'])){
     
@@ -22,8 +27,13 @@ if(isset($_SESSION['user'])){
         //echo "Existe el usuario";
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
-
+        ob_start();
+        $rec= $_SESSION['n1m'];
+        if($rec==1){
+            include_once 'vistas/Nodejs.php';
+        }else{
         include_once 'vistas/home.php';
+    }
         
     }else{
         //echo "No existe el usuario";

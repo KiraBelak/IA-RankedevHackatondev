@@ -1,5 +1,9 @@
 
 <!DOCTYPE html>
+<?php
+ob_start();
+echo $_SESSION['n1m'];
+ ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="mains.css">
+    
 </head>
 
 <body>
@@ -34,17 +39,35 @@
     Front End
   </span>
 </p>
-<?php $url="https://".$_SERVER['HTTP_HOST']."/vistas/Nodejs.php" ?>
+
 </div>
+<?php
+function clickMes(){
+  ob_start();
+    $_SESSION['n1m']=1;
+    
+    
+  }
+     ?>
+
   <ul class="Menu-list" data-offset="10">
-    <a href="<?php echo($url)?>">
-      
+   
+    <button href="index.php" onclick="clickMe()">
+    
     <li class="Menu-list-item" data-offset="20" onclick>
       NodeJs
+      <script>
+  function clickMe(){
+    <?php echo clickMes(); ?>;
+    location.reload(true);
+  }
+</script>
       <span class="Mask"><span>NodeJs</span></span>
       <span class="Mask"><span>NodeJs</span></span>
     </li>
-    </a>
+ 
+    </button>
+   
     <li class="Menu-list-item" data-offset="16" onclick>
       Javascript
       <span class="Mask"><span>Javascript</span></span>

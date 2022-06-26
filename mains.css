@@ -197,6 +197,20 @@ body {
     width: 40em;
     margin: 0 0 0 -20em;
   }
+  button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+     -webkit-appearance: button; /* for input */
+       -moz-user-select: none;
+        -ms-user-select: none;
+  }
   p span {
     font: 700 4em/1 "Oswald", sans-serif;
     letter-spacing: 0;

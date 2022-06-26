@@ -7,13 +7,27 @@
     <title>exam</title>
     <link rel="stylesheet" href="mains.css">
 </head>
-
+<?php
+function clickMes(){
+  ob_start();
+    $_SESSION['n1m']=0;
+    
+    
+  }
+     ?>
 <body>
     <div id="menus">
         <ul>
-            <a href="home.php">
+            <button href="home.php" onclick="clickMe()">
+        
+            <script>
+  function clickMe(){
+    <?php echo clickMes(); ?>;
+    location.reload(true);
+  }
+</script>
             <li>Home</li>
-            </a>
+            </button>
             <img src="Group 1.png" alt="">
             <li class="cerrar-sesion"><a href="includes/logout.php">Cerrar sesión</a></li>
         </ul>
