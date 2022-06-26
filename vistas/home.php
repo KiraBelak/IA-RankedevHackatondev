@@ -34,9 +34,10 @@
     Front End
   </span>
 </p>
+<?php $url="https://".$_SERVER['HTTP_HOST']."/vistas/Nodejs.php" ?>
 </div>
   <ul class="Menu-list" data-offset="10">
-    <a href=$siu >
+    <a href="<?php echo($url)?>">
       
     <li class="Menu-list-item" data-offset="20" onclick>
       NodeJs
